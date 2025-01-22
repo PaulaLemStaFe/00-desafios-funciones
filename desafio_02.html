@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="desafio.css">
+    <title>Desafío 2 De Lógica De Programación De ONE</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header_container">
+            <div class="logo_container">
+                <img src="./img/Fondo_Pantalla_01.jpg" alt="Logo de DataCode Labs">
+            </div>
+            <div class="text_container">
+                <div class="container_texto">
+                    <h1><span>DESAFÍO 2 EN LÓGICA </span></h1>
+                    <h1><span>DE PROGRAMACIÓN DE ONE</span></h1>
+                </div>
+            </div>
+        </div>
+        <div class="container_aclaracion">
+            <p><span>Los resultados de los ejercicios de esta parte de los desafíos se mostrarán por consola. Presionar F12 para poder ver los resultados en consola.</span></p>
+        </div>
+        <div class="input_container">
+            <h2>Funciones</h2>
+
+            <h3>Función 2: Saludar</h3>
+            <p><span>2. Crear una función que reciba un nombre como parámetro y muestre "¡Hola, {nombre}!" en la consola.</span></p>
+            <div class="input_row">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre">
+                <button onclick="saludarUsuario()">Saludar</button>
+                <span id="resultadoSaludar"></span>
+            </div>
+
+            <h3>Función 3: Duplicar Número</h3>
+            <p><span>3. Crear una función que reciba un número como parámetro y devuelva el doble de ese número.</span></p>
+            <div class="input_row">
+                <label for="numero">Número para duplicar:</label>
+                <input type="number" id="numero">
+                <button onclick="duplicar()">Duplicar</button>
+                <span id="resultadoDuplicar"></span>
+            </div>
+
+            <h3>Función 4: Calcular Promedio</h3>
+            <p><span>4. Crear una función que reciba tres números como parámetros y devuelva su promedio.</span></p>
+            <div class="input_row">
+                <label for="num1">Número 1:</label>
+                <input type="number" id="num1">
+                <label for="num2">Número 2:</label>
+                <input type="number" id="num2">
+                <label for="num3">Número 3:</label>
+                <input type="number" id="num3">
+                <button onclick="promedio()">Calcular Promedio</button>
+                <span id="resultadoPromedio"></span>
+            </div>
+
+            <h3>Función 5: Mayor de Dos Números</h3>
+            <p><span>5. Crear una función que reciba dos números como parámetros y devuelva el mayor de ellos.</span></p>
+            <div class="input_row">
+                <label for="numA">Número A:</label>
+                <input type="number" id="numA">
+                <label for="numB">Número B:</label>
+                <input type="number" id="numB">
+                <button onclick="mayor()">Mayor de Dos</button>
+                <span id="resultadoMayor"></span>
+            </div>
+
+            <h3>Función 6: Cuadrado de Número</h3>
+            <p><span>6. Crear una función que reciba un número como parámetro y devuelva el resultado de multiplicar ese número por sí mismo.</span></p>
+            <div class="input_row">
+                <label for="numCuadrado">Número:</label>
+                <input type="number" id="numCuadrado">
+                <button onclick="cuadrado()">Cuadrado</button>
+                <span id="resultadoCuadrado"></span>
+            </div>
+        </div>
+
+        <div class="footer_container_botones">
+            <div class="bottom_anterior">
+                <a href="index.html" class="btn">Anterior Desafío</a>
+            </div>
+            <div class="bottom_siguiente">
+                <a href="desafio_03.html" class="btn">Siguiente Desafío</a>
+            </div>
+        </div>
+
+    </div>
+    <script src="app_desafio_02.js"></script>
+</body>
+</html>

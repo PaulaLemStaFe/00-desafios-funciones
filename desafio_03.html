@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="desafio.css">
+    <title>Desafío 3 De Lógica De Programación De ONE</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header_container">
+            <div class="logo_container">
+                <img src="./img/Fondo_Pantalla_01.jpg" alt="Logo de DataCode Labs">
+            </div>
+            <div class="text_container">
+                <div class="container_texto">
+                    <h1><span>DESAFÍO 3 EN LÓGICA </span></h1>
+                    <h1><span>DE PROGRAMACIÓN DE ONE</span></h1>
+                </div>
+            </div>
+        </div>
+        <div class="container_aclaracion">
+            <p><span>Los resultados de los ejercicios de esta parte de los desafíos se mostrarán por consola. Presionar F12 para poder ver los resultados en consola.</span></p>
+        </div>
+        <div class="input_container">
+            <h2>Funciones</h2>
+
+            <h3>Función 1: Calcular IMC</h3>
+            <p><span>1. Crea una función que calcule el índice de masa corporal (IMC) de una persona a partir de su altura en <br> 
+                metros y peso en kilogramos, que se recibirán como parámetros.</span></p>
+            <div class="input_row">
+                <label for="altura">Altura (m):</label>
+                <input type="number" id="altura" step="0.01">
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" step="0.1">
+                <button onclick="calcularIMC()">Calcular IMC</button>
+                <span id="resultadoIMC"></span>
+            </div>
+
+            <h3>Función 2: Calcular Factorial</h3>
+            <p><span>2. Crea una función que calcule el valor del factorial de un número pasado como parámetro.</span></p>
+            <div class="input_row">
+                <label for="numeroFactorial">Número:</label>
+                <input type="number" id="numeroFactorial">
+                <button onclick="calcularFactorial()">Calcular Factorial</button>
+                <span id="resultadoFactorial"></span>
+            </div>
+
+            <h3>Función 3: Convertir a Reales</h3>
+            <p><span>3. Crea una función que convierta un valor en dólares, pasado como parámetro, y devuelva el valor <br> 
+                equivalente en reales (moneda brasileña, si deseas puedes hacerlo con el valor del dólar en tu país). <br> Para esto, considera la cotizaciòn del dólar igual a R$4,80.</span></p>
+            <div class="input_row">
+                <label for="dolares">Dólares (USD):</label>
+                <input type="number" id="dolares" step="0.01">
+                <button onclick="convertirReales()">Convertir a Reales</button>
+                <span id="resultadoReales"></span>
+            </div>
+
+            <h3>Función 4: Área y Perímetro Rectangular</h3>
+            <p><span>4. Crea una función que muestre en pantalla el área y el perímetro de una sala rectangular, utilizando <br> 
+                la altura y la anchura que se proporcionarán como parámetros.</span></p>
+            <div class="input_row">
+                <label for="ancho">Ancho (m):</label>
+                <input type="number" id="ancho" step="0.01">
+                <label for="alto">Alto (m):</label>
+                <input type="number" id="alto" step="0.01">
+                <button onclick="areaPerimetroRectangular()">Calcular</button>
+                <span id="resultadoRectangular"></span>
+            </div>
+
+            <h3>Función 5: Área y Perímetro Circular</h3>
+            <p><span>5. Crea una función que muestre en pantalla el área y el perímetro de una sala circular, utilizando su <br> 
+                radio que se proporcionará como parámetro. Considera Pi = 3,14.</span></p>
+            <div class="input_row">
+                <label for="radio">Radio (m):</label>
+                <input type="number" id="radio" step="0.01">
+                <button onclick="areaPerimetroCircular()">Calcular</button>
+                <span id="resultadoCircular"></span>
+            </div>
+
+            <h3>Función 6: Tabla de Multiplicar</h3>
+            <p><span>6. Crea una función que muestre en pantalla la tabla de multiplicar de un número dado como parámetro.</span></p>
+            <div class="input_row">
+                <label for="numeroTabla">Número:</label>
+                <input type="number" id="numeroTabla">
+                <button onclick="tablaMultiplicar()">Mostrar Tabla</button>
+                <span id="resultadoTabla"></span>
+            </div>
+        </div>
+
+        <div class="footer_container_botones">
+            <div class="bottom_anterior">
+                <a href="desafio_02.html" class="btn">Anterior Desafío</a>
+            </div>
+            <div class="bottom_siguiente">
+                <a href="desafio_04.html" class="btn">Siguiente Desafío</a>
+            </div>
+        </div>
+    </div>
+    <script src="app_desafio_03.js"></script>
+</body>
+</html>
